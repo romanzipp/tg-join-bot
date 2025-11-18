@@ -13,9 +13,5 @@ RUN npm ci --omit=dev
 # Copy application code
 COPY main.js ./
 
-# Set environment variables (will be overridden at runtime)
-ENV BOT_TOKEN="" \
-    DEVELOPER_CHAT_ID=""
-
 # Run the bot
 CMD ["node", "main.js"]
